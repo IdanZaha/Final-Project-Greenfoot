@@ -13,25 +13,25 @@ public class Scoreboard extends Actor
      */
     public Scoreboard()
     {
-        points = 0; // Starting points.
-        GreenfootImage img = new GreenfootImage(150,30); // This is a Greenfoot image.
-        img.setFont( myFont ); // Font shown on the screen.
+        points = 0; 
+        GreenfootImage img = new GreenfootImage(150,30); 
+        img.setFont( myFont ); 
         img.setColor(Color.WHITE);
-        img.drawString("Balloons: " + points, 5,25); // This is the Score text.
-        setImage(img); // This sets the image in the scoreboard.
+        img.drawString("Balloons: " + points, 5,25); 
+        setImage(img); 
     }
 
     /**
-     * addToScore updates the score of the scoreboard when a fly eats a fruit.
+     * addToScore updates the score of the scoreboard when a the bullet hits the balloon.
      * 
      * @params - there are no parameters
      * @returns - there are no return types
      */
     public void addToScore() 
     {
-        points++; // Adds in points during the fly eating a fruit.
-        GreenfootImage img = getImage(); // Greenfoot image.
-        img.clear(); // Clears the image.
+        points++; 
+        GreenfootImage img = getImage(); 
+        img.clear(); 
         img.drawString("Balloons: " + points, 5,25);
     }    
 }

@@ -16,9 +16,13 @@ public class RedBalloon extends Actor
     public void act() 
     {
         balloonIsMoving();
-    }
-
-    private void balloonIsMoving()
+    } 
+    /**
+     * balloonIsMoving is the method used for checking wich button is clicked and then changing the speed setting of the balloons.
+     * 
+     * @params - there are no parameters.
+     * @returns - there are no return types.
+     */    private void balloonIsMoving()
     {
         int Speed = 0;
         if(((MyWorld)getWorld()).getDifficulty().equalsIgnoreCase("Easy"))

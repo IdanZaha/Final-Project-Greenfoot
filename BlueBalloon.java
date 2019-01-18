@@ -19,7 +19,12 @@ public class BlueBalloon extends Actor
     {
         balloonIsMoving();
     }
-
+    /**
+     * balloonIsMoving is the method used for checking wich button is clicked and then changing the speed setting of the balloons.
+     * 
+     * @params - there are no parameters.
+     * @returns - there are no return types.
+     */
     private void balloonIsMoving()
     {
         int Speed = 0;

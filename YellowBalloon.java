@@ -16,6 +16,12 @@ public class YellowBalloon extends Actor
     {
         loopYellowBalloon();
     }
+        /**
+     * loopYellowBalloon is the method used for checking wich button is clicked and then changing the speed setting of the balloons. And it also is set to loop the balloon around the map.
+     * 
+     * @params - there are no parameters.
+     * @returns - there are no return types.
+     */
     private void loopYellowBalloon()
     {
                 int Speed = 0;

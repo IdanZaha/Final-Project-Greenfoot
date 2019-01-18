@@ -5,5 +5,5 @@ comment1.target=Scoreboard()
 comment1.text=\r\n\ This\ is\ the\ setup\ of\ the\ scoreboard.\r\n\ \r\n\ @params\ -\ there\ are\ no\ parameters.\r\n\ @returns\ -\ there\ are\ no\ return\ types.\r\n
 comment2.params=
 comment2.target=void\ addToScore()
-comment2.text=\r\n\ addToScore\ updates\ the\ score\ of\ the\ scoreboard\ when\ a\ fly\ eats\ a\ fruit.\r\n\ \r\n\ @params\ -\ there\ are\ no\ parameters\r\n\ @returns\ -\ there\ are\ no\ return\ types\r\n
+comment2.text=\r\n\ addToScore\ updates\ the\ score\ of\ the\ scoreboard\ when\ a\ the\ bullet\ hits\ the\ balloon.\r\n\ \r\n\ @params\ -\ there\ are\ no\ parameters\r\n\ @returns\ -\ there\ are\ no\ return\ types\r\n
 numComments=3

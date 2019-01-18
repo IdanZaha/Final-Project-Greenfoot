@@ -6,4 +6,5 @@ comment1.target=void\ act()
 comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ Medium\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
 comment2.params=
 comment2.target=void\ clickDetection()
+comment2.text=\r\n\ clickDetection\ is\ the\ method\ used\ for\ checking\ if\ the\ Medium\ button\ has\ been\ clicked\ and\ if\ it\ has\ it\ starts\ the\ game\ as\ "Medium"\ mode.\r\n\ \r\n\ @params\ -\ there\ are\ no\ parameters.\r\n\ @returns\ -\ there\ are\ no\ return\ types.\r\n
 numComments=3

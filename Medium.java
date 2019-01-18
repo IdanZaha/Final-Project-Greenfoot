@@ -16,6 +16,12 @@ public class Medium extends Actor
     {
         clickDetection();
     }
+        /**
+     * clickDetection is the method used for checking if the Medium button has been clicked and if it has it starts the game as "Medium" mode.
+     * 
+     * @params - there are no parameters.
+     * @returns - there are no return types.
+     */
         private void clickDetection()
     {
         if(Greenfoot.mouseClicked(this))

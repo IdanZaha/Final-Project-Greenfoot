@@ -31,6 +31,12 @@ public class MyWorld extends greenfoot.World
         getData();
     }
 
+    /**
+     * the getDifficulty method returns the difficulity of the game.
+     * 
+     * @params -  there are no params.
+     * @returns - there is one return which is String that sets difficulty to a string.
+     */
     public String getDifficulty()
     {
         return difficulty;
@@ -40,7 +46,6 @@ public class MyWorld extends greenfoot.World
     {
         if(start == true)
 
-        
         {
             if(objectsAdded == false)
             {
@@ -56,6 +61,7 @@ public class MyWorld extends greenfoot.World
                 addObject(new RedBalloon(), Greenfoot.getRandomNumber(700), getHeight()/2);
                 addObject( score, 100, 25);
                 showText(Long.toString(highscores[0]/1000)+Long.toString(highscores[1]/1000)+Long.toString(highscores[2]/1000)+Long.toString(highscores[3]/1000)+Long.toString(highscores[4]/1000),100,75);
+                showText("<- Highscore!",200,75);
                 systemTimeOffset = System.currentTimeMillis();
                 objectsAdded = true;
             }
@@ -104,6 +110,12 @@ public class MyWorld extends greenfoot.World
         }   
     }
 
+    /**
+     * displayText is the method that is used to you can adjust font size, and color of text.
+     * 
+     * @params - there are many parameters that are all used to display the text, so Color, Size, the X and Y, and display of the text.
+     * @returns - there are no return types.
+     */
     private void displayText(GreenfootImage background, String display, Color color, int size, int x, int y)
     {
         GreenfootImage imgScore = new GreenfootImage(display,size, color, new Color(0,0,0,0));
@@ -113,11 +125,23 @@ public class MyWorld extends greenfoot.World
         setBackground(background);
     }
 
+    /**
+     * update is the method used for updating the scoreboard and adding a value to the scoreboard when something happens.
+     * 
+     * @params - there are no parameters.
+     * @returns - there are no return types.
+     */
     public void update()
     {
         score.addToScore();
     }
 
+    /**
+     * addBlueBalloon is the method used for when there are no more blue balloons left on the map more are added.
+     * 
+     * @params - there is one parameter that holds "a" as an integer which is used for the loop of the method.
+     * @returns - there are no return types.
+     */
     public void addBlueBalloon(int a)
     {
         for(int f=0; f<a; f++) 
@@ -128,6 +152,12 @@ public class MyWorld extends greenfoot.World
         }
     }
 
+    /**
+     * addRedBalloon is the method used for when there are no more red balloons left on the map more are added.
+     * 
+     * @params - there is one parameter that holds "c" as an integer which is used for the loop of the method.
+     * @returns - there are no return types.
+     */
     public void addRedBalloon(int c)
     {
         for(int f=0; f<c; f++)
@@ -138,6 +168,12 @@ public class MyWorld extends greenfoot.World
         }
     }
 
+    /**
+     * addYellowBalloon is the method used for when there are no more yellow balloons left on the map more are added.
+     * 
+     * @params - there is one parameter that holds "e" as an integer which is used for the loop of the method.
+     * @returns - there are no return types.
+     */
     public void addYellowBalloon(int e)
     {
         for(int f=0; f<e; f++)
@@ -148,6 +184,12 @@ public class MyWorld extends greenfoot.World
         }
     }
 
+    /**
+     * start is the method used for telling if start is true or not, and if it has it removes the objects not needed.
+     * 
+     * @params - there is one String parameted which is "d" used for short of difficulty.
+     * @returns - there are no return types.
+     */
     public void start(String d)
     {
         start = true;
@@ -155,6 +197,12 @@ public class MyWorld extends greenfoot.World
         removeObjects(getObjects(null));
     }
 
+    /**
+     * timerHighscore is the method used for telling the highscore in time, in 4 values, 0-4.
+     * 
+     * @params - there are no parameters.
+     * @returns - there are no return types.
+     */
     public void timerHighscore()
     {
         long time = System.currentTimeMillis()-systemTimeOffset;
@@ -209,6 +257,12 @@ public class MyWorld extends greenfoot.World
             e.printStackTrace();    
         }
     }
+    /**
+     * getData is the method used for getting the data from the file in the greenfoot file of this project. The file is named "game".
+     * 
+     * @params - there are no parameters.
+     * @returns - there are no return types.
+     */
     private void getData()
     {
         FileInputStream fis;

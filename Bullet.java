@@ -10,6 +10,9 @@ public class Bullet extends Actor
 {
     private int speed;
     private GreenfootImage img = getImage();
+    /**
+     * constructor of the Bullet class.
+     */
     public Bullet()
     {
         img.scale(50,50);

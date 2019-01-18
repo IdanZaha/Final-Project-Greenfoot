@@ -27,6 +27,12 @@ public class Scope extends Actor
         shotSniper();
         
     }
+    /**
+     * shotSniper is the method for checking if the spacebar is clicked and also delaying the bullet, when the spacebar is clicked the bullet shoots.
+     * 
+     * @params - there are no parameters.
+     * @returns - there are no return types.
+     */
         public void shotSniper()
     {
         

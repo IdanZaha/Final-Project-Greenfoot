@@ -6,4 +6,5 @@ comment1.target=void\ act()
 comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ RedBalloon\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
 comment2.params=
 comment2.target=void\ balloonIsMoving()
+comment2.text=\r\n\ balloonIsMoving\ is\ the\ method\ used\ for\ checking\ wich\ button\ is\ clicked\ and\ then\ changing\ the\ speed\ setting\ of\ the\ balloons.\r\n\ \r\n\ @params\ -\ there\ are\ no\ parameters.\r\n\ @returns\ -\ there\ are\ no\ return\ types.\r\n
 numComments=3

@@ -6,4 +6,5 @@ comment1.target=void\ act()
 comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ Scope\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
 comment2.params=
 comment2.target=void\ shotSniper()
+comment2.text=\r\n\ shotSniper\ is\ the\ method\ for\ checking\ if\ the\ spacebar\ is\ clicked\ and\ also\ delaying\ the\ bullet,\ when\ the\ spacebar\ is\ clicked\ the\ bullet\ shoots.\r\n\ \r\n\ @params\ -\ there\ are\ no\ parameters.\r\n\ @returns\ -\ there\ are\ no\ return\ types.\r\n
 numComments=3
